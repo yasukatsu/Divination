@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="text-center">
+    <input class="h_btn"
+           type="button"
+           value="占う"
+           name="h_btn">
+
+       <%# <%= @num %>
+      <div class="divination">
+      <%= if @num == 1
+        p "大吉！！！"
+      elsif @num <= 3
+        p "中吉！！"
+      elsif @num <= 6
+        p "小吉！"
+      elsif @num <= 9
+        p "凶"
+      else
+        p "大凶"
+      end  %>
+      </div>
+  </div>
+</div>
